@@ -1,11 +1,12 @@
 # Config-Loader
-Simple loader for your config
+### Simple loader for your config
 
 Working with the following formats: .env, .json, .ini, .yaml. 
 
-Why use Config Loader? Because all that is required of you is to specify the path to the config file, and you will be able to freely access your config through the dot.
+Why use Config Loader? Because all that is required of you is to specify the path to the config file, and you will be able to freely access your config using the dot.
+<details>
+<summary>Examples</summary>
 
-Work examples:
 .ENV
 ```python
 def test_env():  
@@ -40,3 +41,7 @@ def test_ini():
     print(INI_config.BOT_CONFIG.token) # 23626346346-dfgfdfggdfg:63463443
     print(INI_config.BOT_CONFIG.bot_name) # zzeyy
 ```
+</details>
+
+### Tip 
+If, for example, you want to create a config for a Telegram bot, then it’s better to call it BotConfig and the like. There is no need to name class objects IniConfig, JSON_CFG, etc.
