@@ -1,0 +1,4 @@
+version: 1.11
+logger:
+  level: DEBUG
+  format: "[%(asctime)s - %(name)s] | %(levelname)s: %(message)s"
