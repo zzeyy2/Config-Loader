@@ -4,8 +4,18 @@
 Working with the following formats: .env, .json, .ini, .yaml. 
 
 Why use Config Loader? Because all that is required of you is to specify the path to the config file, and you will be able to freely access your config using the dot.
+## Installing
+```bash
+pip3 install python-dotenv configparser pyyaml
+```
+1. Just import the config.py file into your project
+2.
+```python
+from config import ConfigLoader
+```
+
 <details>
-<summary>Examples</summary>
+<summary>Usage</summary>
 
 .ENV
 ```python
